@@ -16,3 +16,8 @@ class SerializerConfig(models.Model):
 
     def __str__(self):
         return f"product: {self.product_name} - step: {self.step} - field: {self.field_name}"
+    
+    class Meta:
+        verbose_name = "Serializer Config"
+        verbose_name_plural = "Serializer Configs"
+        db_table = "serializer_config"
